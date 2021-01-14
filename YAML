@@ -1,1 +1,20 @@
+apiVersion: 
+kind: 
+metadata:
+  name: 
+spec:
+  selector:
+    matchLabels:
+      app: 
+  replicas:
+  template:
+    metadata:
+      labels:
+        app: 
+    spec:
+      containers:
+      - name: 
+        image:
+        ports:
+        - containerPort: 
 
