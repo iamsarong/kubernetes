@@ -1,0 +1,20 @@
+apiVersion: apps/v1 # defines the API version running 
+kind: Deployment # in this line we say the type we are trying to execute. 
+metadata:
+  name: testing-deployment
+spec:
+  selector:
+    matchLabels:
+      app: testing # app name
+  replicas: 2 # tells the deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels: # this is the labelling parameter of each container
+        app: # name of the app
+    spec:
+      containers:
+      - name: testing_container # name of the container
+        image: # an image has the details of the container
+        ports: 
+        - containerPort: # the port you can access the container
+
